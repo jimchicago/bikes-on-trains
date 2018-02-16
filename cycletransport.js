@@ -4,9 +4,9 @@
 
 // JavaScript code:
 function cycleTrans(direction="", depart=0, arrive=0) {
-   if( (direction == "outbound" && depart >= 15 && depart <= 19)
+   if( (direction == "out" && depart >= 15 && depart <= 19)
        ||
-       (direction == "inbound" && arrive >= 6.5 && arrive <= 9.5)
+       (direction == "in" && arrive >= 6.5 && arrive <= 9.5)
      ) {
             return "No"  // Or should it be: cycleTransField = "No" }
    else {
