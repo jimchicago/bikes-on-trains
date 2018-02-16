@@ -4,16 +4,11 @@
 
 // JavaScript code:
 function cycleTrans(direction="", depart=0, arrive=0) {
-   if(direction == "outbound" &&
-      depart >= 15 &&
-      depart <= 19)
-   ||
-   if(direction == "inbound" &&
-      arrive >= 06.5 &&
-      arrive <= 09.5) {
-         return "No"  // Or should it be: cycleTransField = "No"
-	 }
+   if( (direction == "outbound" && depart >= 15 && depart <= 19)
+       ||
+       (direction == "inbound" && arrive >= 6.5 && arrive <= 9.5)
+     ) {
+            return "No"  // Or should it be: cycleTransField = "No" }
    else {
-	    return "Yes" // Or should it be: cycleTransField = "Yes"
-   }
+	    return "Yes" // Or should it be: cycleTransField = "Yes" }
 }
